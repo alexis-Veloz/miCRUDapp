@@ -1,0 +1,21 @@
+body
+{
+	
+
+}
+.cuadro
+{
+	overflow: hidden;
+	width: 33.3%;
+	float: right;
+	text-align: center;
+	padding: 40px;
+}
+.cuadro iframe
+{
+	width: 100%;
+}
+.clear
+{
+	clear: both;
+}

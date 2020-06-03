@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%=title %></title>
+	<%- include ('partials/head.html')%>
+</head>
+<body>
+	<%- include ('partials/navigation.html')%>
+	
+		<% for (var i = 0; i < datos.length; i ++) { %>
+			<div class="cuadro">
+				<%- datos[i].codigo %>
+				<h3 class="text-info"><%= datos[i].nombre %></h3>
+				<p>Subido por: <%= datos[i].usuario %></p>
+				<p>Calificación: <%= datos[i].calificacion %></p>
+			</div>
+		<% } %>
+	
+	<div class="clear"></div>
+	
+	
+	<%- include ('partials/footer.html')%>
+</body>
+</html> 
